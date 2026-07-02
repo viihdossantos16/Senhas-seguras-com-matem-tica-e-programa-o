@@ -1,0 +1,13 @@
+Objetivo: Proteger e regulamentar o uso de códigos voltados para a criação e validação de senhas seguras.
+
+Permissões: Uso livre para execução, modificação e distribuição do código (baseado no modelo MIT), desde que mantida a segurança do usuário final.
+
+Regras de Segurança (Matemática e Programação):
+
+    Foco em Entropia: Compromisso com o aumento do comprimento da senha para garantir complexidade exponencial contra ataques de força bruta.
+
+    Boas Práticas: Obrigatoriedade do uso de salts gerados aleatoriamente (CSPRNG) em caso de armazenamento de hashes.
+
+    Evitar Padrões Clichês: Crítica a substituições previsíveis (como trocar 'e' por '3'), priorizando aleatoriedade real.
+
+Isenção de Responsabilidade: O código é fornecido "como está". Os autores não se responsabilizam por falhas de implementação, vazamentos ou bugs, reforçando que a lógica de aplicação depende do desenvolvedor.
