@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript: Senhas Seguras & Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Senhas Seguras: Matemática + JS</h1>
+        <p>A segurança de uma senha depende da sua <strong>Entropia</strong> ($E = L \times \log_2(R)$). Digite uma senha para ver a matemática acontecer.</p>
+        
+        <div class="input-group">
+            <input type="password" id="password" placeholder="Digite sua senha aqui...">
+            <button id="toggle-btn" type="button">👁️</button>
+        </div>
+
+        <div class="metrics">
+            <div class="metric-box">
+                <span class="label">Comprimento ($L$):</span>
+                <span id="length-val" class="value">0</span>
+            </div>
+            <div class="metric-box">
+                <span class="label">Variedade ($R$):</span>
+                <span id="pool-val" class="value">0</span>
+            </div>
+            <div class="metric-box">
+                <span class="label">Entropia:</span>
+                <span id="entropy-val" class="value">0 bits</span>
+            </div>
+        </div>
+
+        <div class="progress-bar-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+        
+        <p id="strength-text" class="strength-text">Digite algo para começar...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
